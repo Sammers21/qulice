@@ -156,11 +156,6 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     <property name="optional" value="false"/>
   </module>
   <module name="TreeWalker">
-    <module name="SuppressWithNearbyCommentFilter">
-      <property name="commentFormat" value="@checkstyle (\w+) \((\d+) lines?\)"/>
-      <property name="checkFormat" value="$1"/>
-      <property name="influenceFormat" value="$2"/>
-    </module>
     <!-- Checks for annotations. -->
     <module name="AnnotationUseStyle">
       <property name="elementStyle" value="compact_no_array"/>
