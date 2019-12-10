@@ -151,16 +151,11 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     <property name="message" value="Line cannot start with this symbol, move it to the previous line"/>
   </module>
   <!-- Checks for Header -->
-  <module name="Header">
-    <property name="header" value="${header}"/>
-    <property name="fileExtensions" value="java"/>
-  </module>
   <module name="SuppressionFilter">
     <property name="file" value="/com/qulice/checkstyle/suppressions.xml"/>
     <property name="optional" value="false"/>
   </module>
   <module name="TreeWalker">
-    <property name="cacheFile" value="${cache.file}"/>
     <module name="SuppressWithNearbyCommentFilter">
       <property name="commentFormat" value="@checkstyle (\w+) \((\d+) lines?\)"/>
       <property name="checkFormat" value="$1"/>
